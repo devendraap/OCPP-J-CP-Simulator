@@ -823,15 +823,18 @@
     $('#status').click(function () {
 	onAction();
 	sessionStorage.setItem('LastAction', "StatusNotification");
+	    
         var SN = JSON.stringify([2, id, "StatusNotification", {
             "connectorId": connectorId,
             "status": statusNotification,
             "errorCode": "NoError",
-            "info": "",
+            "info": "Electric vehicle info",
             "timestamp": formatDate(new Date()),
-            "vendorId": "",
+            "vendorId": "rus.avt.cp",
             "vendorErrorCode": ""
         }]);
+	    
+	
         _websocket.send(SN);
 
     });
