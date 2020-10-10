@@ -825,7 +825,7 @@
 	sessionStorage.setItem('LastAction', "StatusNotification");
 	    
         var SN = JSON.stringify([2, id, "StatusNotification", {
-            "connectorId": connectorId,
+            "connectorId": +connectorId,
             "status": statusNotification,
             "errorCode": "NoError",
             "info": "Electric vehicle info",
