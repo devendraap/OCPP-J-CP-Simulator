@@ -780,7 +780,7 @@
         const interval = setInterval(() => {
           if (currIndex < meterValuesArr.length) {
             var meterValue = meterValuesArr[currIndex];
-	    meterValue[0].timestamp = meterValue[1].timestamp = meterValue[2].timestamp = meterValue[3].timestamp = new Date().toISOString();
+	    meterValue.meterValue[0].timestamp = meterValue.meterValue[1].timestamp = meterValue.meterValue[2].timestamp = meterValue.meterValue[3].timestamp = new Date().toISOString();
             var MV = JSON.stringify([
               2,
               id,
