@@ -5,3 +5,6 @@ To start working change the endpoint URL and register the CP
 
 ## Licensing
 Licensed under Apache License 2.0
+
+Visit:
+https://elocity-tech.github.io/OCPP-J-CP-Simulator-DEV/#tab2
